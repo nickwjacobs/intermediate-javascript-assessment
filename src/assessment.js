@@ -46,32 +46,30 @@ var scopeArray5 = ["grandpa", "dad", "son", "uncle", "cousin"];
 var foo;
 /* Write a function called async.
   Use $q to create a promise object and return the promise.
-  Call setTimeout on a function
-  which changes the variable foo (above) to 'bar'
-  And resolve the promise when setTimeout completes.
+  Call setTimeout on a function which sets the variable foo (above) to 'bar' and then resolve the promise when setTimeout completes.
 */
 
 
 // #3  ###################
 // # Context 1
 // Write a function called context1 that takes in 4 parameters: A function called myFn, an object called context, param1, and param2.
-// Invoke myFn explicitly setting the context to the object called context.  Pass in param1 and param2 in order as well.
+// Invoke myFn and explicitly set the context to the object called context and pass in param1 and param2 in order. Return the result.
 
 
 
 
 // #4  ###################
 // # Context 2
-// Write a function called context2 that takes in 3 parameters: A function called myFn, an object called context, and an array called params
-// Invoke myFn explicitly setting the context to the object called context.  Pass in params
+// Write a function called context2 that takes in 3 parameters: A function called myFn, an object called context, and an array called params.
+// Invoke myFn and explicitly set the context to the object called context and pass in the params array. Return the result.
 
 
 
 
 // #5  ###################
 // # Context 3
-// Write a function called context3 that takes in 2 parameters: A function called myFn, and an object called context
-// Make sure the function is permanently linked to the context.  This should give you a new function, return it.
+// Write a function called context3 that takes in 2 parameters: A function called myFn, and an object called context.
+// Make sure the function is permanently linked to the context and return it.
 
 
 
@@ -85,35 +83,35 @@ var foo;
 
 // #7  ###################
 // # Implicit binding
-// Make a constructor function called burrito.  It has a property called percentLeft = 100.  It has a property called eat that is a function.  When eat is invoked it uses context to implicitly subract 25 from the percentLeft on the burrito.
+// Make a constructor function called burrito. Give it a property called percentLeft and set it equal to 100. Give it another property called eat that is a function. When eat is invoked it uses context to subtract 25 from the percentLeft property on the burrito.
 
 
 
 // #8  ###################
 // # Prototype 1
-// Add prototype function to the array type that doubles the value of every item in the array
+// Add a prototype function to the Array type that doubles the value of every item in the array and returns the modified array.
 
 
 
 
 // #9  ###################
 // # Prototype 2
-// Write a constructor function called chimichanga.  It has a property called percentLeft = 100.  It has a prototype function called eat.  When eat is invoked it uses context to implicitly subract 20 from the precentLeft on the chimichanga.
+// Write a constructor function called chimichanga. Give it a property called percentLeft and set it equal to 100. Give it a prototype function called eat. When eat is invoked it uses context to subtract 20 from the percentLeft property on the chimichanga.
 
 
 
 
 // #10  ###################
 // # Closure 1
-// Write a function called sentence machine.  It takes in a parameter called partOne.  It returns a function called sentenceSmasher.
+// Write a function called sentence machine that takes in a parameter called partOne and returns a function called sentenceSmasher.
 // When sentenceSmasher is invoked it should take in a parameter called partTwo and return a new string that adds partOne and partTwo together.
 
 
 
 // #11  ###################
 // # Closure 2
-// Write a function called subway.  It takes in one parameter called personName.
-// It needs to keep track of what ingredients the person wants on their sandwhich.
+// Write a function called subway that takes in one parameter called personName.
+// It needs to keep track of what ingredients the person wants on their sandwich.
 // It needs to do this by returning a function called addIngredient.
 // When addIngredient is invoked it saves that ingredient with previously added ingredients and then returns an object that looks like this (Replace the parts wrapped in <> with correct data):
 // ```
@@ -127,7 +125,7 @@ var foo;
 
 // #12  ###################
 // # Type checking
-// Write a function that takes in 2 parameters.
-// If both parameters are the same type an the same value return "Exact match".
-// If both parameters have the same value but are different types return "Different types"
-// Otherwise return "Different values"
+// Write a function called compareValues that takes in 2 parameters.
+// If both parameters are the same type and the same value return "Exact match".
+// If both parameters have the same value but are different types return "Different types".
+// Otherwise return "Different values".
